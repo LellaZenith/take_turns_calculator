@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Driving Availability</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #333333; /* Set the background color to dark gray */
+    }
+    
+    .driver {
+      text-align: center;
+      margin-bottom: 20px;
+      opacity: 0.8; /* Reduce the opacity of the driver section */
+    }
+    
+    button {
+      background-color: #4CAF50; /* Set the button background color */
+      color: #ffffff; /* Set the button text color */
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 3px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    
+    button:hover {
+      background-color: #45a049; /* Change button background color on hover */
+    }
+    
+    p {
+      margin: 10px 0;
+      margin-bottom: 5px;
+      color: #ffffff; /* Set paragraph text color to white */
+    }
+    
+    h2 {
+      text-align: center;
+      color: #dddddd; /* Set heading text color to light gray */
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>WHO WILL DRIVE?</h2>
+  <div class="driver">
+    <button onclick="updatePerson1ClickCount()">Person 1 will drive</button>
+    <p>Times Person 1 has driven: <span id="person1Count">0</span></p>
+  </div>
+
+  <div class="driver">
+    <button onclick="updatePerson2ClickCount()">Person 2 will drive</button>
+    <p>Times Person 2 has driven: <span id="person2Count">0</span></p>
+  </div>
+
+  <div class="driver">
+    <button onclick="updatePerson3ClickCount()">Person 3 will drive</button>
+    <p>Times Person 3 has driven: <span id="person3Count">0</span></p>
+  </div>
+  
+  <div class="nextDriver">
+    <h2>Next Driver: <span id="nextDriver"></span></h2>
+  </div>
+
+  <script src="instructions.js"></script>
+</body>
+</html>
